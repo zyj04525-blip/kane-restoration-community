@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>凯恩战记 · 入场与实时战斗试玩</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p style="text-align:center">非官方研究原型，尚未达到一比一。<a href="../demo/">无素材逻辑预览</a> · <a href="../docs/ASSETS.md">素材接入说明</a></p>
+<main>
+  <header><h1>凯恩战记</h1><span>社区研究原型 · 原版素材另行提供</span><button id="motion" aria-pressed="true">画面动画：开</button></header>
+  <div id="original-frame"><div id="viewport"><div id="stage">
+    <canvas id="screen" width="960" height="560" tabindex="0" aria-label="游戏画面"></canvas>
+    <section id="welcome" aria-label="本机入口">
+      <h2>欢迎回到光辉草原</h2><p>本机入口 · 无需原游戏账号</p>
+      <button id="new-journey" disabled>创建角色</button><button id="continue-journey" hidden>继续本机角色</button>
+      <small>原版登录、选服画面仍待找回</small>
+    </section>
+    <div id="choices" aria-label="创建角色选项" hidden>
+      <button class="spot" id="male" aria-label="选择男性" style="left:11.770833%;top:13.571429%;width:4.479167%;height:7.142857%"></button>
+      <button class="spot" id="female" aria-label="选择女性" style="left:17.604167%;top:13.571429%;width:4.479167%;height:7.142857%"></button>
+      <button class="spot" id="appearance0" aria-label="选择第一种外观" style="left:7.812500%;top:31.250000%;width:18.750000%;height:23.214286%"></button>
+      <button class="spot" id="appearance1" aria-label="选择第二种外观" style="left:7.812500%;top:55.000000%;width:18.750000%;height:17.142857%"></button>
+      <button class="spot" id="appearance2" aria-label="选择第三种外观" style="left:7.812500%;top:73.750000%;width:18.750000%;height:18.928571%"></button>
+      <button class="spot" id="spirit0" style="left:34.791667%;top:82.678571%;width:13.229167%;height:16.607143%"></button>
+      <button class="spot" id="spirit1" style="left:48.541667%;top:82.678571%;width:14.687500%;height:16.607143%"></button>
+      <button class="spot" id="spirit2" style="left:65.208333%;top:82.678571%;width:13.437500%;height:16.607143%"></button>
+      <button class="spot" id="invite" aria-label="查看邀请码说明" style="left:87.395833%;top:69.821429%;width:11.145833%;height:8.214286%"></button>
+      <button class="spot" id="enter" aria-label="进入游戏，填写角色名字" style="left:86.562500%;top:80.178571%;width:12.395833%;height:18.928571%"></button>
+    </div>
+    <div id="comic-controls" hidden aria-label="开场剧情控制">
+      <button class="spot" id="comic-skip" aria-label="跳过整段剧情" style="left:87.5%;top:1.25%;width:11.875%;height:5.714286%"></button>
+      <button class="spot" id="comic-next" aria-label="剧情下一页" style="left:87.5%;top:90.178571%;width:11.875%;height:7.142857%"></button>
+    </div>
+    <div id="shade" hidden></div>
+    <form id="name-dialog" role="dialog" aria-modal="true" aria-label="为自己取个响亮的名字吧" hidden>
+      <label class="sr-only" for="nickname">角色名字</label><input id="nickname" name="nickname" maxlength="12" autocomplete="off" spellcheck="false">
+      <button type="button" id="random-name" aria-label="随机名字"></button>
+      <button type="submit" id="confirm-name" aria-label="确定名字"></button>
+      <button type="button" id="cancel-name" aria-label="取消"></button>
+      <span id="name-error" role="alert"></span>
+    </form>
+    <div id="loading" hidden><span>正在进入游戏</span><progress id="progress" max="100" value="0" aria-label="载入本地场景"></progress></div>
+  </div></div></div>
+  <div class="control-line"><p id="status" role="status" aria-live="polite">正在载入原版界面……</p><button id="comic-back" hidden>上一页</button><button id="primary" disabled>进入游戏</button></div>
+  <div id="battle-controls" hidden><output id="battle-readout" aria-live="polite"></output><button id="battle-audio" disabled>原版音效待找回</button><button id="battle-pause">暂停战斗</button><button id="battle-restart">重新挑战</button></div>
+  <div id="touch-controls" hidden aria-label="触屏战斗控制"><button data-key="KeyA">←</button><button data-key="KeyW">↑</button><button data-key="KeyS">↓</button><button data-key="KeyD">→</button><button data-key="KeyJ">攻击 J</button></div>
+  <div id="skill-controls" hidden aria-label="海之轻语技能"><button data-key="KeyH" data-skill="h">H 冰霜拳</button><button data-key="KeyU" data-skill="u">U 水幕天华</button><button data-key="KeyN" data-skill="n">N 冰河时代</button><button data-key="KeyI" data-skill="i">I 绝对零度</button><button data-key="KeyO" data-skill="o">O 冰晶爆裂</button><button data-key="KeyL" data-skill="l">L 究级波浪</button></div>
+  <nav aria-label="查看已还原界面">
+    <span>入口与场景</span><button data-scene="welcome">本机入口</button><button data-scene="create">创建角色</button><button data-scene="comic0">开场漫画</button><button data-scene="battle">进入实时战斗</button><button data-scene="home">我的家</button><button data-scene="town">树心广场</button><button id="resume" hidden>继续上次角色</button>
+  </nav>
+  <p class="scope">海之轻语可实时走位与战斗。三段普攻分别对齐原录像动作和水花时序；六招已接入独立施放、冷却和命中，特效由原录像分离；遮挡缺失、透明度和数值仍待校准，尚未达到一比一。家与广场暂为参考画面。</p>
+  <details><summary>这版已做与待补的内容</summary>
+    <p>已做：本机入口、角色预览、取名与取消、本机保存、载入与漫画翻页，再进入可操作的圣杯长廊。漫画原位置的下一页、跳过剧情按钮已接通，可返回上一页，退出后保留入场进度。WASD 走位，双击 A/D 冲刺，J 连击，Esc 暂停，R 重试。三段攻击使用不同的原录像动作，水花分别起势、展开和消散。新增 H 冰霜拳、U 水幕天华、N 冰河时代、I 绝对零度、O 冰晶爆裂、L 究级波浪；可用按键、画面技能栏或下方按钮施放。持续区域留在施放位置，击飞、减速与多段命中由战斗计算。法力与冷却暂用复原估计，不能视为原版数值。守卫会追近、蓄势攻击；玩家可以躲开，双方有独立生命、受击和胜负判定。当前可玩斗灵只有海之轻语，其他斗灵仍为预览。</p>
+    <p>人物：走路改为原录像中完整的五姿势周期，保留 13 个采样帧和 520 毫秒时长；脚下光圈使用另一段无遮挡录像，原始透明度仍待找回。水幕天华扩大了右侧水浪范围，并补回部分误删的底部亮部；敌人遮挡仍未全部解决。</p><p>声音：此前的录像采样含视频配乐，已撤下，不再作为游戏音效播放。原版独立音效尚未找回。冰河时代补入另一段原录像的上部冰晶，必杀恢复原先误删的深蓝水柱；遮挡仍未全部解决。</p><p>待补：原版登录与选服画面、其他斗灵的完整动作、完整独立原版音效、家与广场的互动、原版完整任务和数值。守卫目前只有一个分离出的姿势。录像分层会残留边缘，水花透明度并非原始贴图。当前战斗参数是可校准的复原估计，不是找回的源代码。</p>
+    <p>角色名字仅保存在此浏览器，不连接原游戏账号。本版未运行未知测试 EXE。依据：<a href="https://video.5054399.com/v/v2/video_229512.xml" target="_blank" rel="noreferrer">4399《凯恩战记》2.0 版新手指引</a>。原始取帧位置见<a href="assets/manifest.json" target="_blank">画面来源记录</a>。</p>
+  </details>
+  <noscript>请启用 JavaScript 使用本地界面。</noscript>
+</main>
+<script src="../playable/engine.js"></script>
+
+<script src="../playable/arena.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

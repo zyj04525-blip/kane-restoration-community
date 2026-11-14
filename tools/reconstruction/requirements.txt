@@ -1,0 +1,4 @@
+# Optional historical research tools only. The runtime and importer need none.
+av
+numpy
+Pillow

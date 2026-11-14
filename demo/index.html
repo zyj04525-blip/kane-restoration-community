@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>凯恩战记社区研究 · 战斗逻辑预览</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<h1>战斗逻辑预览</h1>
+<p>凯恩战记社区还原研究 · 非官方原型。几何图形仅用于检查走位、攻击和判定，<strong>不是原版画面</strong>。当前数值仍是估计，音效留空。</p>
+<p><a href="../entry/">已接入本地素材？打开入场流程</a> · <a href="../docs/ASSETS.md">素材接入说明</a></p>
+<canvas id="screen" width="960" height="560" tabindex="0" aria-label="战斗逻辑演示画布"></canvas>
+<p id="readout" role="status"></p>
+<div id="controls"><button data-key="KeyW">上 W</button><button data-key="KeyA">左 A</button><button data-key="KeyS">下 S</button><button data-key="KeyD">右 D</button><button data-key="KeyJ">普攻 J</button><button id="pause">暂停</button><button id="restart">重新开始</button></div>
+<div id="skills"></div>
+<p>WASD / 方向键移动，双击 A/D 冲刺，J 连击，H/U/N/I/O/L 技能，Esc 暂停，R 重置。蓝色是玩家，金色是敌人；框线显示技能估计范围。</p>
+<p>完整还原仍缺原版素材与参数。<a href="../README.md">项目说明</a> · <a href="../docs/STATUS.md">当前缺口</a></p>
+</main><script src="../playable/engine.js"></script><script src="../playable/arena.js"></script><script src="demo.js"></script></body>
+</html>

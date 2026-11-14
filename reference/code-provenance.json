@@ -1,0 +1,125 @@
+{
+  "note": "Reconstruction code from this project, not the original game source. No decompiled fan-project code included.",
+  "files": [
+    {
+      "source": "playable/engine.js",
+      "target": "playable/engine.js",
+      "source_sha256": "94006b962c91fabc9ad0949c5df80f16e0502de347dc078090061244de0ee946"
+    },
+    {
+      "source": "playable/arena.js",
+      "target": "playable/arena.js",
+      "source_sha256": "47ed6eaff92b3dbae65b1d0e7930d20b70c579361706106f2e5c71a601643a42"
+    },
+    {
+      "source": "playable/engine.test.cjs",
+      "target": "playable/engine.test.cjs",
+      "source_sha256": "2087692e24354b8664ab98988ab9e11956f5407adada7253443e1c0a57e888b3"
+    },
+    {
+      "source": "entry/index.html",
+      "target": "entry/index.html",
+      "source_sha256": "1944da06cd407b9d34b40fc4187d8b020c33888d54e2f5373fb6789f61557631"
+    },
+    {
+      "source": "entry/app.js",
+      "target": "entry/app.js",
+      "source_sha256": "2f04ddfd24ce081a3d4ac038f883d6b7ddfa5699f4337bdb5a0a408af1a2e6d7"
+    },
+    {
+      "source": "entry/style.css",
+      "target": "entry/style.css",
+      "source_sha256": "7a4a3c904fe1ecdde1bdc27fc4bbc1489808ad0837145c0e533f4b67232a997d"
+    },
+    {
+      "source": "build_entry_offline.py",
+      "target": "build_entry_offline.py",
+      "source_sha256": "ad961e61cabe0f5c45dc0055fa5a597b7321a530e42ebc9efb5f4bce50028685"
+    },
+    {
+      "source": "entry/assets/manifest.json",
+      "target": "reference/entry-manifest.json",
+      "source_sha256": "f050f4814917eebff8d4fb6fc1a5eadccd79a67b4d4bd383d00429f078a996a4"
+    },
+    {
+      "source": "playable/assets-v6/manifest.json",
+      "target": "reference/combat-manifest.json",
+      "source_sha256": "f8e79809f777713ae67bdb773ec0da678978448fa411edfb128e5cab32e67074"
+    },
+    {
+      "source": "research/resource-hunt-2026-11-12/pass-4/原版录像线索目录.csv",
+      "target": "reference/official-video-catalog.csv",
+      "source_sha256": "c99fceace32a6d7e04c68853d33c8da38a1e4fd2a55813742566a7cd48348382"
+    },
+    {
+      "source": "extract_playable_assets.py",
+      "target": "tools/reconstruction/extract_playable_assets.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "refine_playable_assets.py",
+      "target": "tools/reconstruction/refine_playable_assets.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "extract_ocean_skills.py",
+      "target": "tools/reconstruction/extract_ocean_skills.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "refine_ocean_casts.py",
+      "target": "tools/reconstruction/refine_ocean_casts.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "restore_ocean_highlights.py",
+      "target": "tools/reconstruction/restore_ocean_highlights.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "repair_ocean_quality.py",
+      "target": "tools/reconstruction/repair_ocean_quality.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "trim_detached_body_pixels.py",
+      "target": "tools/reconstruction/trim_detached_body_pixels.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "refine_locomotion_edges.py",
+      "target": "tools/reconstruction/refine_locomotion_edges.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "recover_walk_cycle.py",
+      "target": "tools/reconstruction/recover_walk_cycle.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "recover_water_curtain.py",
+      "target": "tools/reconstruction/recover_water_curtain.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "prepare_entry_assets.py",
+      "target": "tools/reconstruction/prepare_entry_assets.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "build_cycle_comparison.py",
+      "target": "tools/reconstruction/build_cycle_comparison.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "verify_entry_assets.py",
+      "target": "tools/reconstruction/verify_entry_assets.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    },
+    {
+      "source": "verify_playable_alignment.py",
+      "target": "tools/reconstruction/verify_playable_alignment.py",
+      "changes": "Local paths replaced with configurable work/input roots; optional portable QA font."
+    }
+  ]
+}

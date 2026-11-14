@@ -1,0 +1,329 @@
+{
+  "source": "https://video.5054399.com/v/v2/video_229512.xml",
+  "source_file_sha256": "9fc155d39dd1dbbcc34faff50e844487564350fedb8afbbc3a8391f6eb41d2c5",
+  "source_dimensions": [
+    960,
+    560
+  ],
+  "frames": {
+    "male0": {
+      "time": 20.8,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "ac6b2e67e6aba22803164f439690ef2b77fde00d00966ec20bab5c98c73d38c1",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "female0": {
+      "time": 25.8,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "05455ebf857e62b3a0668de1c6db0a0d6688289ac90da98394c7df5c0c91de85",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "male1": {
+      "time": 29.72,
+      "crop": null,
+      "obstruction": "原录像教程字幕遮挡人物下半部",
+      "sha256": "f3486f519456aea7bb406bd9d7c95b28f62031958018b6d7ca52cc1c048e4050",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "male2": {
+      "time": 31.0,
+      "crop": null,
+      "obstruction": "原录像教程字幕遮挡人物下半部",
+      "sha256": "b89f01e1c1b8debd512ae2afa7e97b164a481055e8a03c292800dabb0981b0b8",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "assassin": {
+      "time": 37.0,
+      "crop": null,
+      "obstruction": "原录像教程字幕遮挡人物脚部及属性",
+      "sha256": "9d0498e9e52292d07374d8b42f2e789fa6b28335de811fe90c1fcc0746363883",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "blade": {
+      "time": 39.16,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "9cf1133a4ce7c73290aecc0145ad7a62f3de60fc2cdd680449d8a4856e02e0e7",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "sea": {
+      "time": 41.32,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "a205117fa6de256ffb8b8b05e7fed0befeadb51754bbb6dc21918290f8c650fc",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "name-panel": {
+      "time": 45.12,
+      "crop": [
+        348,
+        205,
+        614,
+        354
+      ],
+      "obstruction": "",
+      "sha256": "9166a2dab5968eb36586b6dd88d5bd0cf93fa63d208a8355745749bdc701787e",
+      "size": [
+        266,
+        149
+      ],
+      "extraction": "manually-traced-outer-panel-boundary"
+    },
+    "splash": {
+      "time": 69.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "06764d3caf101408ffcb919ce18a6953052ffb5ec3d45b8da2a7fa4509eed5a0",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "loading-panel": {
+      "time": 52.0,
+      "crop": [
+        325,
+        233,
+        635,
+        318
+      ],
+      "obstruction": "",
+      "sha256": "039c786b0f22c27b9e780c3dc0d7faee76340472c8779336279b99686595905b",
+      "size": [
+        310,
+        85
+      ]
+    },
+    "comic0": {
+      "time": 60.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "f31be6ed68f5a1405f2c7465212c0ddea3777e55a7977a36bdb8c06c525ed98f",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "comic1": {
+      "time": 64.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "b4620da8429c14d9363590e5f5198c88ebb71a4332d109a239ba97bb4cc48c15",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "comic2": {
+      "time": 68.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "f5532f6ccd711b7562844ec99e5fed37af570858277c65e0db46f1ffd60afc6e",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "tutorial": {
+      "time": 72.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "b378a9b6311c3445756ef571760dd390519fd892e7c48c4cb30d958d87cfd793",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "home": {
+      "time": 254.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "1af19ea88665b84665011093b91f46e5a120d432d0a18f0d836ac94f878891cf",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "town": {
+      "time": 265.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "f81f04430ff0f7de8790fd1d104ecd4061e8ff6843f28d48fcb2f53b953cd56b",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "town-dialog": {
+      "time": 266.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "6e8b1b3bda061a4791c73d771ea9f82c771079c085dece1a25bc9dbd7bad4b53",
+      "size": [
+        960,
+        560
+      ]
+    },
+    "town-after": {
+      "time": 290.0,
+      "crop": null,
+      "obstruction": "",
+      "sha256": "068fe0acc81a2b49a4b18689659f996a9660e11954d8ed9e0ff7023146bf023b",
+      "size": [
+        960,
+        560
+      ]
+    }
+  },
+  "animations": {
+    "male0": {
+      "times": [
+        20.0,
+        20.04,
+        20.08,
+        20.12,
+        20.16,
+        20.2,
+        20.24,
+        20.28,
+        20.32,
+        20.36,
+        20.4,
+        20.44,
+        20.48,
+        20.52,
+        20.56,
+        20.6,
+        20.64,
+        20.68,
+        20.72,
+        20.76,
+        20.8,
+        20.84,
+        20.88,
+        20.92,
+        20.96,
+        21.0
+      ],
+      "sheets": [
+        {
+          "file": "male0-animation-0.webp",
+          "count": 10
+        },
+        {
+          "file": "male0-animation-1.webp",
+          "count": 10
+        },
+        {
+          "file": "male0-animation-2.webp",
+          "count": 6
+        }
+      ],
+      "fps": 25,
+      "loop": "recorded-excerpt-loop-not-original-cycle"
+    },
+    "sea": {
+      "times": [
+        41.0,
+        41.04,
+        41.08,
+        41.12,
+        41.16,
+        41.2,
+        41.24,
+        41.28,
+        41.32,
+        41.36,
+        41.4,
+        41.44,
+        41.48,
+        41.52,
+        41.56,
+        41.6,
+        41.64,
+        41.68,
+        41.72,
+        41.76,
+        41.8
+      ],
+      "sheets": [
+        {
+          "file": "sea-animation-0.webp",
+          "count": 10
+        },
+        {
+          "file": "sea-animation-1.webp",
+          "count": 10
+        },
+        {
+          "file": "sea-animation-2.webp",
+          "count": 1
+        }
+      ],
+      "fps": 25,
+      "loop": "recorded-excerpt-loop-not-original-cycle"
+    },
+    "blade": {
+      "times": [
+        39.0,
+        39.04,
+        39.08,
+        39.12,
+        39.16,
+        39.2,
+        39.24,
+        39.28,
+        39.32,
+        39.36,
+        39.4,
+        39.44,
+        39.48,
+        39.52,
+        39.56,
+        39.6
+      ],
+      "sheets": [
+        {
+          "file": "blade-animation-0.webp",
+          "count": 10
+        },
+        {
+          "file": "blade-animation-1.webp",
+          "count": 6
+        }
+      ],
+      "fps": 25,
+      "loop": "recorded-excerpt-loop-not-original-cycle"
+    }
+  },
+  "limitations": [
+    "Video compression and recording watermark remain.",
+    "Login/server-selection screen is not documented by this clip.",
+    "Female appearances 2 and 3 are not available as full previews.",
+    "Recorded animation excerpt looping is not verified as the original cycle.",
+    "Post-creation battle is a reference screen, not implemented gameplay."
+  ]
+}
